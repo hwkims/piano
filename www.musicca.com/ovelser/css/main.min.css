@@ -1,0 +1,2270 @@
+/*!*********** GENERELT **************/
+@font-face {
+	font-family: 'Helsinki Std';
+	src: url("HelsinkiStd.otf") format("opentype")
+}
+
+/*!*********** SIDELAYOUT **************/
+body.ovelser div.fix__content div.wrapper content:after {
+	display: none
+}
+
+#oevelsesbaggrund {
+	background-color: #FFF;
+	border-radius: 4px
+}
+
+/* @media (min-width: calc($mobilemax + 1px)) {
+	.default__page__content {
+		padding-bottom: 60px
+	}
+} */
+
+.default__page__content div {
+	max-width: inherit
+}
+
+@media (max-width: 800px) {
+	#table__opgave {
+		margin: 0 auto;
+		width: 100%
+	}
+}
+
+@media (min-width: 641px) and (max-width: 1005px) {
+	section#ovelser {
+		width: 100%
+	}
+}
+
+@media (max-width: 1005px) {
+	.navigation__skjul {
+		display: none
+	}
+
+	section#ovelser {
+		width: 100%
+	}
+
+	h1#opgaveoverskrift {
+		font-size: 1.5rem !important;
+		line-height: 1.7rem !important
+	}
+}
+
+#sideoverskrift {
+	font-size: 32px;
+	margin-bottom: 60px;
+    text-align: center;
+}
+
+@media (max-width: 1005px) {
+	#sideoverskrift {
+		font-size: 28px;
+		margin-top: 5px
+	}
+}
+
+@media (max-width: 400px) {
+	#sideoverskrift {
+		font-size: 22px;
+		text-align: center;
+		margin-bottom: 27px
+	}
+}
+
+.navigation__desktop ul li.item-30 a {
+	border-bottom: 2px solid;
+	border-color: white
+}
+
+@media (max-width: 1005px) {
+	.greybg .wrapper {
+		background: #fff
+	}
+}
+
+@media (max-width: 1005px) {
+	.greybg .wrapper.sektionsforside {
+		background: #ebebeb
+	}
+}
+
+.container .online__counter {
+	display: none !important
+}
+
+button {
+	font-size: 1.1rem;
+	font-family: "Open Sans", sans-serif;
+	cursor: pointer;
+	margin: 5px;
+	padding: 8px 8px 11px 8px;
+	border-radius: 10px;
+	border: 2px solid #d2d4d8;
+	background-image: none;
+	background-color: #fff;
+	min-width: 4%;
+	max-width: 100%;
+	text-align: center
+}
+
+button:hover {
+	border-color: #bcbfc5;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1)
+}
+
+button:active {
+	border-color: #d2d4d8;
+	color: #333;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.05)
+}
+
+button:disabled,
+button:disabled:hover {
+	color: #e0e0e0;
+	border-color: #e0e0e0;
+	box-shadow: none;
+	cursor: default
+}
+
+@media (max-width: 800px) {
+	button:disabled {
+		display: none
+	}
+}
+
+@media (max-width: 500px) {
+	button {
+		font-size: 1rem
+	}
+}
+
+@media (max-width: 400px) {
+	button {
+		font-size: 0.85rem;
+		letter-spacing: -0.5px
+	}
+}
+
+.navigation__pull+.navigation__pull {
+	margin-top: 20px
+}
+
+.sidebar__menu h3 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.venstreboks h3,
+.venstreboks p {
+	text-align: center
+}
+
+.venstreboks h3 {
+	line-height: 24px
+}
+
+.niveaubarafsnit {
+	font-size: 0.875em;
+	line-height: 1.429em;
+	text-align: center
+}
+
+.niveaubarbaggrundintro {
+	width: 15px;
+	height: 20px;
+	background: #FFBC00;
+	float: left;
+	margin-left: -15px
+}
+
+.niveaubarbaggrund {
+	height: 20px;
+	width: calc(100% - 30px);
+	background: #EEE;
+	margin-left: 15px;
+	padding: 0 15px
+}
+
+.niveaubar {
+	float: left;
+	width: 15px;
+	background: url(../grafik/progress-bar-baggrund.png);
+	background-size: 200px 20px;
+	height: 20px
+}
+
+.niveaubarcirkel {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+	top: -5px;
+	font-size: 14px;
+	font-weight: 600
+}
+
+.niveaubarcirkelFra {
+	float: left;
+	background: #FFBC00;
+	color: #664B01
+}
+
+.niveaubarcirkelTil {
+	float: right;
+	background: #EEE;
+	color: #666
+}
+
+.venstreboks .sidebar__item a {
+	display: inline;
+	padding: 0;
+	color: #72ac51;
+	opacity: 1
+}
+
+#antalbesvaret {
+	font-size: 28px;
+	line-height: 28px;
+	margin-top: 5px
+}
+
+#emneoversigt {
+	text-align: center
+}
+
+#emneoversigt li {
+	cursor: pointer;
+	background-color: #FFFFFF;
+	width: 170px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px black solid
+}
+
+#emneoversigt li:hover {
+	background-color: #72ac51
+}
+
+#emneoversigt li:hover a {
+	color: #fff
+}
+
+#emneoversigt li.valgt {
+	background-color: #72ac51
+}
+
+#emneoversigt li.valgt a {
+	color: #fff
+}
+
+#emne_container {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto
+}
+
+/* @media (min-width: calc($mobilemax + 1px)) {
+	#emne_container a[id] {
+		position: absolute;
+		-webkit-transform: translateY(-25px);
+		transform: translateY(-25px)
+	}
+} */
+
+h2.cirkel_overskrift {
+	font-weight: 900
+}
+
+ul.cirkel_container {
+	margin-left: -1rem
+}
+
+@media (min-width: 401px) {
+	ul.cirkel_container {
+		margin-top: -20px
+	}
+}
+
+ul.cirkel_container li {
+	display: inline-block;
+	position: relative;
+	width: 33%;
+	padding-left: 20px;
+	margin-bottom: 20px
+}
+
+@media (max-width: 630px) {
+	ul.cirkel_container li {
+		width: 50%
+	}
+}
+
+@media (max-width: 400px) {
+	ul.cirkel_container li {
+		width: 100%
+	}
+}
+
+ul.cirkel_container li div {
+	text-align: center;
+	padding-top: 10px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 3px
+}
+
+ul.cirkel_container li div h3.opgave__boks_overskrift {
+	margin-top: 12px;
+	margin-bottom: 3px
+}
+
+ul.cirkel_container li div p {
+	text-align: center
+}
+
+ul.cirkel_container li div.uloest h3.opgave__boks_overskrift {
+	color: #999
+}
+
+ul.cirkel_container li div.uloest p {
+	color: #999
+}
+
+ul.cirkel_container li div img.opgavestjerne {
+	position: absolute;
+	top: 4px;
+	right: 7px;
+	width: 27px;
+	height: 27px
+}
+
+ul.cirkel_container li div img.opgaverettetegn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 22px;
+	height: 22px
+}
+
+ul.cirkel_container li div .opgave__boks_navn {
+	padding: 0 15px;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+@media (min-width: 401px) {
+	ul.cirkel_container li div .opgave__boks_navn {
+		height: 90px
+	}
+}
+
+ul.cirkel_container li div .cirkel_knap {
+	margin-top: 20px;
+	min-width: 140px;
+	font-size: 1em;
+	padding: 7px 7px 9px 7px;
+	border: 2px solid #d2d4d8;
+	border-radius: 9px
+}
+
+ul.cirkel_container li div .cirkel_knap:hover {
+	color: #fff;
+	border-color: #72ac51;
+	background-color: #72ac51
+}
+
+ul.cirkel_container li div button.standardvalg {
+	color: #FFF;
+	background-color: #72ac51;
+	border-color: #72ac51
+}
+
+.default__page__content img.lukOpgaveKnap {
+	display: inline-block;
+	cursor: pointer;
+	width: 42px;
+	height: 42px;
+	float: left;
+	padding-top: 20px;
+	padding-right: 20px;
+	margin-left: 16px
+}
+
+@media (max-width: 1005px) {
+	.default__page__content img.lukOpgaveKnap {
+		margin-left: 0
+	}
+}
+
+.default__page__content img.lukOpgaveKnap:hover {
+	opacity: 0.8
+}
+
+.default__page__content table img.tooltips {
+	display: inline-block;
+	cursor: pointer;
+	float: right;
+	width: 39px;
+	height: 45px;
+	padding-top: 17px;
+	padding-left: 20px;
+	margin-right: 16px
+}
+
+@media (max-width: 1005px) {
+	.default__page__content table img.tooltips {
+		margin-right: 0
+	}
+}
+
+.default__page__content #titlebutton {
+	display: none;
+	position: absolute;
+	cursor: pointer;
+	width: 22px;
+	height: 22px;
+	bottom: 17px;
+	right: 39px
+}
+
+@media (max-width: 1005px) {
+	.default__page__content #titlebutton {
+		right: 30px
+	}
+}
+
+#copyrightbutton {
+	position: absolute;
+	cursor: pointer;
+	width: 26px;
+	height: 26px;
+	bottom: 16px;
+	right: 32px
+}
+
+@media (max-width: 1005px) {
+	#copyrightbutton {
+		float: right;
+		margin-top: 12px;
+		position: relative;
+		bottom: 0;
+		right: 0
+	}
+}
+
+.licenseTipText {
+	margin-left: 19px;
+	text-indent: -19px
+}
+
+.licenseTipImage {
+	width: 15px;
+	margin-right: 4px;
+	height: 12px
+}
+
+.spoergsmaalTaeller {
+	margin: 22px auto 0 auto;
+	text-align: center
+}
+
+.spoergsmaalTaeller span {
+	display: inline-block;
+	margin: 0px 2px;
+	width: 25px;
+	height: 20px;
+	background-color: #ebebeb
+}
+
+.spoergsmaalTaeller span:first-child {
+	width: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px
+}
+
+.spoergsmaalTaeller span:last-child {
+	width: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px
+}
+
+@media (max-width: 640px) {
+	.spoergsmaalTaeller span {
+		width: 15px
+	}
+
+	.spoergsmaalTaeller span:first-child {
+		width: 16px
+	}
+
+	.spoergsmaalTaeller span:last-child {
+		width: 16px
+	}
+}
+
+h1#opgaveoverskrift {
+	margin-top: 36px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 200;
+	color: #1b1b1b
+}
+
+@media (max-width: 400px) {
+	h1#opgaveoverskrift {
+		margin-top: 20px
+	}
+}
+
+#respons {
+	margin: 0 auto;
+	text-align: center;
+	z-index: 100
+}
+
+@media (min-width: 350px) {
+	#respons {
+		margin-top: 0.5em
+	}
+}
+
+#resultatunderoverskrift {
+	margin: 10px auto 0 auto;
+	text-align: center;
+	z-index: 100
+}
+
+@media (min-width: 350px) {
+	#resultatunderoverskrift {
+		margin-top: 20px
+	}
+}
+
+.fejltekst {
+	color: #db4437
+}
+
+#afspil-lyd-felt {
+	position: relative;
+	text-align: center
+}
+
+@media (max-width: 400px) {
+	#afspil-lyd-felt {
+		margin-bottom: 1em
+	}
+}
+
+.med-responslinje {
+	top: 10px
+}
+
+#afspil-lyd {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding-top: 1.5em;
+	cursor: pointer;
+	z-index: 100
+}
+
+#spoergsmaal {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%
+}
+
+#vissvar {
+	display: none
+}
+
+#vissvar p {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center
+}
+
+#tildeltepoint {
+	text-align: center;
+	margin-top: 0;
+	font-size: 2.4em;
+	padding-bottom: 10px
+}
+
+@media (min-width: 500px) {
+	#tildeltepoint {
+		padding-bottom: 20px;
+		font-size: 3em;
+		max-width: 100%
+	}
+}
+
+#venstreresultat {
+	text-align: center;
+	padding: 0 20px
+}
+
+@media (min-width: 500px) {
+	#venstreresultat {
+		float: left;
+		width: 50%
+	}
+}
+
+#venstreresultat #indrevenstreresultat {
+	max-width: 300px;
+	margin: 0 auto
+}
+
+#venstreresultat .niveaubarafsnit {
+	padding-bottom: 0
+}
+
+#hoejreresultat {
+	margin-top: 20px
+}
+
+@media (min-width: 500px) {
+	#hoejreresultat {
+		float: left;
+		width: 50%;
+		margin-top: 0
+	}
+}
+
+#resultat .svarknapper {
+	clear: both;
+	max-width: 100%;
+	margin: auto;
+	padding: 1em 0 0 0
+}
+
+.resultatstjerne {
+	left: 8px;
+	height: 32px;
+	width: 32px;
+	position: relative;
+	bottom: 3px
+}
+
+.default__page__content .andres_resultater h1#sideoverskrift {
+	margin-bottom: 40px
+}
+
+.default__page__content .andres_resultater table.tabellen {
+	display: table !important;
+	width: 100%;
+	margin-bottom: 45px
+}
+
+.default__page__content .andres_resultater table.tabellen th {
+	cursor: pointer
+}
+
+.default__page__content .andres_resultater table.tabellen th:nth-child(2) {
+	width: 5em
+}
+
+.default__page__content .andres_resultater table.tabellen .dropdown .dropbtn img {
+	width: 16px;
+	position: relative;
+	bottom: 1px;
+	margin-left: 3px
+}
+
+.default__page__content .andres_resultater table.tabellen td {
+	padding-top: 0.7em;
+	padding-bottom: 0.6em;
+	vertical-align: top
+}
+
+.default__page__content .andres_resultater table.tabellen td:nth-child(2) {
+	text-align: right
+}
+
+.default__page__content .andres_resultater table.tabellen td.resultater {
+	white-space: nowrap
+}
+
+.default__page__content .andres_resultater table.tabellen td.afkrydsning {
+	width: 24px;
+	padding-top: 5px;
+	padding-bottom: 0
+}
+
+.default__page__content .andres_resultater table.tabellen td.afkrydsning .afkrydsningsknap {
+	padding-left: 0
+}
+
+.default__page__content .andres_resultater .chzn-container {
+	margin-bottom: 0
+}
+
+.default__page__content .andres_resultater .chzn-search {
+	display: none
+}
+
+.default__page__content .andres_resultater .chzn-results .active-result:first-child {
+	display: none
+}
+
+.default__page__content .andres_resultater .custom-checkbox {
+	position: relative;
+	vertical-align: baseline;
+	top: 3px
+}
+
+.default__page__content .andres_resultater .custom-checkbox input[type="checkbox"] {
+	height: 16px;
+	width: 20px
+}
+
+.default__page__content .andres_resultater .dropbtn {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 1em 6px 1em 6px
+}
+
+.default__page__content .andres_resultater .dropdown {
+	position: relative
+}
+
+.default__page__content .andres_resultater .dropdown-content {
+	display: none;
+	position: absolute;
+	top: 40px;
+	background-color: #ffffff;
+	min-width: 300px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	max-height: 300px;
+	overflow: auto
+}
+
+.default__page__content .andres_resultater .dropdown-content a {
+	color: black;
+	padding: 3px 16px;
+	text-decoration: none;
+	display: block;
+	font-weight: normal
+}
+
+.default__page__content .andres_resultater .dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.default__page__content .andres_resultater .dropdown-content span {
+	color: black;
+	padding: 3px 16px;
+	text-decoration: none;
+	display: block;
+	font-weight: normal
+}
+
+.default__page__content .andres_resultater .dropdown-content span:hover {
+	background-color: #f1f1f1
+}
+
+.default__page__content .andres_resultater .dropdown:hover .dropdown-content {
+	display: block
+}
+
+.default__page__content .andres_resultater .dropdown:hover .dropbtn {
+	background-color: #ccc
+}
+
+/*!************ CIRKEL-ELEMENT **************/
+#enkelt__cirkel {
+	display: table;
+	text-align: center;
+	margin: 0 auto;
+	height: 100%
+}
+
+.opgavetype_ikon {
+	display: block;
+	top: 25px;
+	position: relative;
+	z-index: 99
+}
+
+.afstand {
+	clear: both
+}
+
+.center {
+	margin: 0 auto;
+	position: relative;
+	width: 80%
+}
+
+.cirkel__noder {
+	background-color: #FFE009
+}
+
+.cirkel__klaver {
+	background-color: #1E9FF4
+}
+
+.cirkel__hoerelaere {
+	background-color: #FF464A
+}
+
+.cirkel__billedgenkendelse {
+	background-color: #73da33
+}
+
+.cirkel__rytme {
+	background-color: #a560e8
+}
+
+@media (max-width: 640px) {
+	.center {
+		width: 100%
+	}
+}
+
+.delemne__titel {
+	margin-top: 2em;
+	clear: both
+}
+
+@media (max-width: 400px) {
+	.delemne__titel {
+		margin-top: 1em
+	}
+}
+
+.delemne-container .cirkel {
+	margin-top: 17px;
+	float: left;
+	width: 50%
+}
+
+@media (min-width: 400px) {
+	.delemne-container .cirkel {
+		margin-top: 33px
+	}
+}
+
+.delemne-container .sidste_cirkel {
+	width: 100%
+}
+
+@media (min-width: 640px) {
+	.delemne-container .cirkel {
+		width: 33%
+	}
+
+	.delemne-container .sidste_cirkel {
+		width: 33%
+	}
+
+	.delemne-container .cirkel_venstre {
+		clear: left;
+		margin-left: 17%;
+		width: 33%
+	}
+
+	.delemne-container .cirkel_hoejre {
+		width: 33%;
+		margin-right: 17%
+	}
+
+	.delemne-container .cirkel_ny_linje {
+		clear: left
+	}
+}
+
+.delemne-container .cirkel_midt {
+	width: 100%
+}
+
+.cirkel-container {
+	margin: 0 auto
+}
+
+.cirkel-loader {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 0 auto;
+	background-color: #EEEEEE;
+	border-radius: 100%
+}
+
+.cirkel-loader:hover {
+	opacity: 0.8
+}
+
+.cirkel-loader::after {
+	display: block;
+	width: 76%;
+	height: 38%;
+	border-radius: 100%;
+	position: absolute;
+	top: 12%;
+	left: 12%;
+	text-align: center;
+	font: 12px arial;
+	line-height: 0;
+	padding-top: 38%;
+	color: white;
+	text-shadow: 0 1px 0 black
+}
+
+.cirkel-loader-half {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 0 100% 100% 0/0 50% 50% 0
+}
+
+.cirkel-loader-half:last-child {
+	-webkit-transform-origin: 0 50%;
+	-webkit-transform: rotate(-180.05deg)
+}
+
+.cirkel-loader-rotate {
+	width: 100px;
+	height: 100px;
+	-webkit-transform-origin: 0 50%;
+	-webkit-transform: rotate(-180deg);
+	overflow: hidden;
+	position: absolute;
+	opacity: 1
+}
+
+.cirkel-loader-half:first-child .cirkel-loader-rotate {
+	-webkit-transform: rotate(0deg)
+}
+
+.cirkel-loader-half:last-child .cirkel-loader-rotate {
+	-webkit-transform: rotate(-180deg)
+}
+
+.cirkel-loader-cirkel {
+	width: 200%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	border-radius: 100%
+}
+
+.cirkel-loader-half:first-child .cirkel-loader-cirkel {
+	-webkit-transform: rotate(0deg)
+}
+
+.cirkel-loader-half:last-child .cirkel-loader-cirkel {
+	-webkit-transform: rotate(0deg)
+}
+
+.cirkelstjerne {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 32px;
+	height: 32px
+}
+
+.opgavenavn {
+	display: none
+}
+
+a.emne_opgave_oversigt {
+	display: block;
+	position: relative;
+	z-index: 10;
+	margin: 0 10px
+}
+
+.emne_opgave_oversigt ul li {
+	margin-top: 0.6em
+}
+
+/*!************ SVARKNAPPER **************/
+.svarknapfelt {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center
+}
+
+.svarknapper {
+	margin: 0 auto;
+	text-align: center
+}
+
+@media (max-width: 800px) {
+	.svarknapper button:disabled {
+		display: none
+	}
+
+	.svarknapper button.aktiv:disabled {
+		display: inline
+	}
+}
+
+.svarknapper button.nodesvarknap {
+	min-width: 80px
+}
+
+.svarknapper button.nodesvarknap:disabled {
+	display: inline
+}
+
+.svarknapper button.fravalgt:disabled {
+	transition: 0.3s
+}
+
+.svarknapper button.forkert {
+	color: #FFF;
+	background-color: #db4437;
+	border-color: #db4437
+}
+
+.svarknapper button.rigtigt {
+	color: #FFF;
+	background-color: #72ac51;
+	border-color: #72ac51
+}
+
+.svarknapper button.standardvalg {
+	color: #FFF;
+	background-color: #72ac51;
+	border-color: #72ac51
+}
+
+#svarknapper button.fravalgt:disabled {
+	transition: 0.3s
+}
+
+#svarknapper button.forkert {
+	color: #FFF;
+	background-color: #db4437;
+	border-color: #db4437
+}
+
+#svarknapper button.rigtigt {
+	color: #FFF;
+	background-color: #72ac51;
+	border-color: #72ac51
+}
+
+#svarknapper button.standardvalg {
+	color: #FFF;
+	background-color: #72ac51;
+	border-color: #72ac51
+}
+
+@media (max-width: 800px) {
+	.newline_big {
+		display: none
+	}
+}
+
+.smalleKnapperMedFastBredde {
+	margin: 0 -10px
+}
+
+.smalleKnapperMedFastBredde button {
+	width: 2.7em;
+	padding-left: 0;
+	padding-right: 0
+}
+
+@media (max-width: 500px) {
+	.smalleKnapperMedFastBredde button {
+		width: 2.3em
+	}
+}
+
+@media (max-width: 800px) {
+	.smalleKnapperMedFastBredde button:disabled {
+		display: inline
+	}
+}
+
+.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_fk::first-letter {
+	letter-spacing: -3px
+}
+
+.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_fn::first-letter {
+	letter-spacing: -3px
+}
+
+.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_fb::first-letter {
+	letter-spacing: -3px
+}
+
+@media (min-width: 600px) {
+	.svarknapper_ja-JP .smalleKnapperMedFastBredde button {
+		width: 4em
+	}
+
+	.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_fk {
+		width: 4.7em
+	}
+
+	.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_fn {
+		width: 4.7em
+	}
+
+	.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_fb {
+		width: 4.7em
+	}
+
+	.emne_jp_exercises_key-signatures #svar3 {
+		width: 4.7em
+	}
+
+	.emne_jp_exercises_key-signatures #svar11 {
+		width: 4.7em
+	}
+
+	.emne_jp_exercises_key-signatures #svar19 {
+		width: 4.7em
+	}
+}
+
+@media (max-width: 599px) {
+	.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_en {
+		padding-left: 0.4em;
+		padding-right: 0.4em
+	}
+
+	.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_an {
+		padding-left: 0.5em;
+		padding-right: 0.5em
+	}
+}
+
+@media (max-width: 500px) {
+	.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_fk {
+		width: 2.8em
+	}
+
+	.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_fn {
+		width: 2.8em
+	}
+
+	.svarknapper_ja-JP .smalleKnapperMedFastBredde .tone_fb {
+		width: 2.8em
+	}
+
+	.emne_jp_exercises_key-signatures #svar3 {
+		width: 2.8em
+	}
+
+	.emne_jp_exercises_key-signatures #svar11 {
+		width: 2.8em
+	}
+
+	.emne_jp_exercises_key-signatures #svar19 {
+		width: 2.8em
+	}
+}
+
+.svarknapper_ru-RU .smalleKnapperMedFastBredde .tone_gk {
+	width: 3.6em
+}
+
+.svarknapper_ru-RU .smalleKnapperMedFastBredde .tone_gn {
+	width: 3.6em
+}
+
+.svarknapper_ru-RU .smalleKnapperMedFastBredde .tone_gb {
+	width: 3.6em
+}
+
+.emne_ru_uprazheniya_kljucevye-znaki #svar4 {
+	width: 3.6em
+}
+
+.emne_ru_uprazheniya_kljucevye-znaki #svar12 {
+	width: 3.6em
+}
+
+.emne_ru_uprazheniya_kljucevye-znaki #svar20 {
+	width: 3.6em
+}
+
+.emne_ko_exercises_key-signatures .smalleKnapperMedFastBredde button {
+	width: 3.7em
+}
+
+.bredeKnapperMedFastMinimumbredde button {
+	min-width: 5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em
+}
+
+@media (max-width: 370px) {
+	.bredeKnapperMedFastMinimumbredde button {
+		min-width: 4.4em
+	}
+}
+
+@media (max-width: 800px) {
+	.bredeKnapperMedFastMinimumbredde button:disabled {
+		display: inline
+	}
+}
+
+@media (min-width: 1006px) {
+	.intervalknapperMedAlleIntervaller button {
+		padding-left: 0;
+		padding-right: 0;
+		width: 109px;
+		font-size: 89%
+	}
+
+	.intervalknapperMedAlleIntervaller button:first-child {
+		margin-left: 0
+	}
+
+	.intervalknapperMedAlleIntervaller button:last-child {
+		margin-right: 0
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar1 {
+		position: relative;
+		left: 0;
+		top: 57px
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar2 {
+		position: relative;
+		left: -119px;
+		top: 0
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar3 {
+		position: relative;
+		left: -119px;
+		top: 57px
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar4 {
+		position: relative;
+		left: -238px;
+		top: 0
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar5 {
+		position: relative;
+		left: -238px;
+		top: 0
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar6 {
+		position: relative;
+		left: -357px;
+		top: 57px;
+		width: 228px
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar7 {
+		position: relative;
+		left: 352px;
+		top: -51px
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar8 {
+		position: relative;
+		left: 352px;
+		top: 6px
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar9 {
+		position: relative;
+		left: 233px;
+		top: -51px
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar10 {
+		position: relative;
+		left: 233px;
+		top: 6px
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar11 {
+		position: relative;
+		left: 114px;
+		top: -51px
+	}
+
+	.intervalknapperMedAlleIntervaller button#svar12 {
+		position: relative;
+		left: 114px;
+		top: -51px
+	}
+
+	.default__page__content div .intervalknapperMedAlleIntervaller {
+		max-width: 1040px
+	}
+}
+
+@media (max-width: 1005px) {
+	div.intervalknapperMedAlleIntervaller {
+		max-width: 860px
+	}
+}
+
+@media (min-width: 1006px) {
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button {
+		font-size: 100%;
+		width: 96px;
+		vertical-align: top;
+		padding-top: 5px;
+		height: 58px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar0 {
+		position: relative;
+		left: 56px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar1 {
+		position: relative;
+		left: 56px;
+		top: 68px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar2 {
+		position: relative;
+		left: -50px;
+		top: 0px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar3 {
+		position: relative;
+		left: -50px;
+		top: 68px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar4 {
+		position: relative;
+		left: -156px;
+		top: 0px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar5 {
+		position: relative;
+		left: -156px;
+		top: 0px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar6 {
+		position: relative;
+		left: -262px;
+		top: 68px;
+		width: 202px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar7 {
+		position: relative;
+		left: -368px;
+		top: 0px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar8 {
+		position: relative;
+		left: 369px;
+		top: 0px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar9 {
+		position: relative;
+		left: 263px;
+		top: -68px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar10 {
+		position: relative;
+		left: 263px;
+		top: 0px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar11 {
+		position: relative;
+		left: 157px;
+		top: -68px
+	}
+
+	.svarknapper_fr-FR .intervalknapperMedAlleIntervaller button#svar12 {
+		position: relative;
+		left: 157px;
+		top: -68px
+	}
+}
+
+@media (min-width: 1006px) {
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button {
+		font-size: 100%;
+		width: 96px;
+		vertical-align: top;
+		padding-top: 5px;
+		height: 58px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar0 {
+		position: relative;
+		left: 56px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar1 {
+		position: relative;
+		left: 56px;
+		top: 68px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar2 {
+		position: relative;
+		left: -50px;
+		top: 0px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar3 {
+		position: relative;
+		left: -50px;
+		top: 68px;
+		padding-left: 4px;
+		padding-right: 4px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar4 {
+		position: relative;
+		left: -156px;
+		top: 0px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar5 {
+		position: relative;
+		left: -156px;
+		top: 0px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar6 {
+		position: relative;
+		left: -262px;
+		top: 68px;
+		width: 202px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar7 {
+		position: relative;
+		left: -368px;
+		top: 0px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar8 {
+		position: relative;
+		left: 369px;
+		top: 0px;
+		padding-left: 4px;
+		padding-right: 4px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar9 {
+		position: relative;
+		left: 263px;
+		top: -68px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar10 {
+		position: relative;
+		left: 263px;
+		top: 0px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar11 {
+		position: relative;
+		left: 157px;
+		top: -68px
+	}
+
+	.svarknapper_it-IT .intervalknapperMedAlleIntervaller button#svar12 {
+		position: relative;
+		left: 157px;
+		top: -68px
+	}
+}
+
+@media (min-width: 1006px) {
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button {
+		font-size: 100%;
+		width: 96px;
+		vertical-align: top;
+		padding-top: 5px;
+		height: 58px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar0 {
+		position: relative;
+		left: 56px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar1 {
+		position: relative;
+		left: 56px;
+		top: 68px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar2 {
+		position: relative;
+		left: -50px;
+		top: 0px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar3 {
+		position: relative;
+		left: -50px;
+		top: 68px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar4 {
+		position: relative;
+		left: -156px;
+		top: 0px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar5 {
+		position: relative;
+		left: -156px;
+		top: 0px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar6 {
+		position: relative;
+		left: -262px;
+		top: 68px;
+		width: 202px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar7 {
+		position: relative;
+		left: -368px;
+		top: 0px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar8 {
+		position: relative;
+		left: 369px;
+		top: 0px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar9 {
+		position: relative;
+		left: 263px;
+		top: -68px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar10 {
+		position: relative;
+		left: 263px;
+		top: 0px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar11 {
+		position: relative;
+		left: 157px;
+		top: -68px
+	}
+
+	.svarknapper_ru-RU .intervalknapperMedAlleIntervaller button#svar12 {
+		position: relative;
+		left: 157px;
+		top: -68px
+	}
+}
+
+/*!************ NODER **************/
+.default__page__content div.nodebillede {
+	max-width: 800px
+}
+
+.nodebillede p {
+	margin-top: -0.25em
+}
+
+.nodebillede input {
+	display: none
+}
+
+.nodebillede [type="radio"]+span::before {
+	display: none
+}
+
+.nodebillede span.custom-checkbox {
+	display: none
+}
+
+.nodebillede label {
+	float: left;
+	cursor: pointer;
+	margin: 5px;
+	padding: 4px 8px 0px 8px;
+	border-radius: 10px;
+	border: 1px solid #d2d4d8;
+	display: inline-block;
+	min-width: 50px;
+	height: 43px;
+	text-align: center;
+	background-color: #eee
+}
+
+.nodebillede label.valgt {
+	background-color: #ccc
+}
+
+.nodebillede input[type="checkbox"]:checked~span {
+	background-color: #ccc
+}
+
+@media (max-width: 500px) {
+	.nodebillede .svarknapper button {
+		font-size: 1.1rem
+	}
+}
+
+@media (max-width: 650px) {
+	.nodebillede .svarknapper button {
+		font-size: 1.1rem
+	}
+}
+
+@media (min-width: 700px) {
+	.nodebillede .redigeringsknapper {
+		float: left;
+		width: 240px
+	}
+
+	.nodebillede button.nodesvarknap {
+		margin-right: 240px
+	}
+}
+
+@media (max-width: 400px) {
+	div.nodelaesning {
+		margin-top: -1em
+	}
+
+	#spoergsmaal.ekstraMarginVedNL_toner {
+		padding-left: 48px;
+		padding-right: 48px
+	}
+}
+
+@media (min-width: 450px) {
+	.hoejtNodebilledePaaDesktop {
+		margin-top: 42px;
+		margin-bottom: 42px
+	}
+}
+
+svg text {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none
+}
+
+svg text::-moz-selection {
+	background: none
+}
+
+svg text::selection {
+	background: none
+}
+
+svg {
+	fill: #000
+}
+
+svg .normal {
+	fill: #000
+}
+
+svg .toneDerSlettes {
+	fill: #CB8DA4
+}
+
+svg .toneDerIndsaettes {
+	fill: #999
+}
+
+svg .rigtigTone {
+	fill: #72ac51;
+	stroke: #72ac51
+}
+
+svg .forkertTone {
+	fill: #db4437;
+	stroke: #db4437
+}
+
+/*!************ INSTRUMENTS **************/
+.question_instrument_image {
+	position: relative;
+	text-align: center;
+	min-height: 300px
+}
+
+.question_instrument_image_with_play_button {
+	position: relative;
+	text-align: center;
+	min-height: 253px
+}
+
+img.instrument_image {
+	max-width: 100%;
+	padding-bottom: 20px;
+	position: absolute;
+	top: calc(50% - 5px);
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+}
+
+.default__page__content table img.instrument_image_with_play_button {
+	padding-top: 33px
+}
+
+/*!************ GENRES **************/
+.genres_question {
+	margin-top: 30px
+}
+
+@media (min-width: 640px) {
+	.genres_question {
+		margin-top: 130px
+	}
+}
+
+/*!************ DATA-TABEL **************/
+table.datatabel {
+	margin: 0 auto;
+	margin-bottom: 1em
+}
+
+table.datatabel thead {
+	cursor: pointer;
+	background: #b2d29f
+}
+
+table.datatabel thead tr th {
+	font-weight: bold;
+	padding: 0.3em 1em;
+	padding-left: 2em
+}
+
+table.datatabel thead tr th span {
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: 100% 100%
+}
+
+table.datatabel thead tr th.headerSortUp,
+table.datatabel thead tr th.headerSortDown {
+	background: #acc8dd
+}
+
+table.datatabel thead tr th.headerSortUp span::after {
+	content: " в–І"
+}
+
+table.datatabel thead tr th.headerSortDown span::after {
+	content: " в–ј"
+}
+
+table.datatabel tbody tr {
+	color: #555
+}
+
+table.datatabel tbody tr td {
+	padding: 0 1em
+}
+
+table.datatabel tbody tr td.tal {
+	text-align: right
+}
+
+table.datatabel tr:nth-child(even) {
+	background: #eee
+}
+
+.content__left.col-ovelser table.datatabel td {
+	display: table-cell
+}
+
+/*!************ KLAVIATUR **************/
+.piano {
+	text-align: center;
+	margin-top: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 37px;
+	display: flex;
+	max-width: 600px
+}
+
+.piano .key:first-child>.white-key {
+	border-left: 1px solid rgba(32, 32, 32, 0.2)
+}
+
+.piano .key {
+	display: inline-flex;
+	flex-grow: 1;
+	position: relative;
+	justify-content: center;
+	cursor: default
+}
+
+.piano .skrivning {
+	cursor: pointer
+}
+
+.key span {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column
+}
+
+.key span i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-style: normal;
+	font-variant: normal;
+	margin-bottom: 12px;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px
+}
+
+@media (max-width: 500px) {
+	.key span i {
+		width: 14px;
+		height: 14px;
+		border-radius: 7px
+	}
+}
+
+.key .white-key {
+	background: #fff;
+	border-top: 1px solid rgba(32, 32, 32, 0.2);
+	border-right: 1px solid rgba(32, 32, 32, 0.3);
+	border-bottom: 1px solid rgba(32, 32, 32, 0.3);
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0px 5px 1px rgba(32, 32, 32, 0.2);
+	margin: 0 -2px;
+	width: 100%;
+	height: 190px;
+	transition: background-color 0.05s ease, box-shadow 0.05s ease
+}
+
+.key .white-key.active {
+	background: #D8D8D8;
+	position: relative;
+	top: 5px;
+	box-shadow: 0px 0px 0px rgba(32, 32, 32, 0);
+	transition: background-color 0.05s ease, box-shadow 0.05s ease
+}
+
+.key .white-key .active .black-key {
+	top: -10px
+}
+
+.key .white-key .normal {
+	background-color: #999;
+	color: transparent;
+	box-shadow: inset -1px -3px 4px rgba(32, 32, 32, 0.3)
+}
+
+.key .white-key .rigtigTone {
+	background-color: #72ac51;
+	color: transparent;
+	box-shadow: inset -1px -3px 4px rgba(32, 32, 32, 0.3)
+}
+
+.key .white-key .forkertTone {
+	background-color: #db4437;
+	color: transparent;
+	box-shadow: inset -1px -3px 4px rgba(32, 32, 32, 0.3)
+}
+
+.key .black-key {
+	content: "";
+	box-shadow: inset 0px -1px 2px rgba(255, 255, 255, 0.4), 0 2px 3px rgba(0, 0, 0, 0.4);
+	background: linear-gradient(-20deg, #222, #000, #222);
+	background: #111;
+	transition: background-color 0.05s ease, box-shadow 0.05s ease;
+	box-shadow: 0px 5px 1px rgba(32, 32, 32, 0.2);
+	border-width: 1px;
+	border-radius: 0 0 5px 5px;
+	border-style: solid;
+	border-color: #666 #222 #111 #555;
+	height: 110px;
+	position: absolute;
+	top: 0px;
+	right: -40%;
+	width: 80%;
+	z-index: 10
+}
+
+.key .black-key.active {
+	box-shadow: 0px 1px 1px rgba(32, 32, 32, 0.1);
+	border-bottom-width: 3px;
+	height: 110px;
+	top: 5px
+}
+
+.key .black-key i {
+	color: #fff;
+	font-size: 10px;
+	left: 0;
+	font-weight: 600;
+	line-height: 0.8rem
+}
+
+.key .black-key .normal {
+	background-color: #999;
+	color: transparent;
+	box-shadow: inset 3px 3px 4px rgba(255, 255, 255, 0.3)
+}
+
+.key .black-key .rigtigTone {
+	background-color: #72ac51;
+	color: transparent;
+	box-shadow: inset 3px 3px 4px rgba(255, 255, 255, 0.3)
+}
+
+.key .black-key .forkertTone {
+	background-color: #db4437;
+	color: transparent;
+	box-shadow: inset 3px 3px 4px rgba(255, 255, 255, 0.3)
+}
+
+.hide--tablet {
+	display: none
+}
+
+.hideNotes {
+	width: 124px
+}
+
+@media (max-width: 640px) {
+	.hide--mobile {
+		display: none
+	}
+
+	.key .black-key {
+		height: 17.4vw
+	}
+
+	.key .black-key.active {
+		height: 17.4vw
+	}
+
+	.key .white-key {
+		height: 30.16vw
+	}
+
+	.key .white-key.active {
+		top: 5px
+	}
+}
+
+.afkrydsningsknap {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none
+}
+
+.afkrydsningsknap input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0
+}
+
+.afkrydsningsmaerke {
+	/*position:absolute;top:0;left:0;display:block*/
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+.afkrydsningsknap:hover input~.afkrydsningsmaerke {
+	background-color: #ccc
+}
+
+.afkrydsningsknap input:checked~.afkrydsningsmaerke {
+	background-color: #72ac51
+}
+
+.afkrydsningsmaerke:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+
+.afkrydsningsknap input:checked~.afkrydsningsmaerke:after {
+	display: block
+}
+
+.afkrydsningsknap .afkrydsningsmaerke:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.rytmenodebillede {
+	float: none
+}
+
+.rytmenodebillede button.nodesvarknap {
+	margin-right: 0
+}
+
+div.nodelaesning.rytmenodebillede {
+	margin-top: 2.5em
+}
+
+div.nodelaesning.rytmenodebillede .svarknapper {
+	margin-top: 1em
+}
+
+div.nodeskrivning.rytmenodebillede {
+	margin-top: 2.5em
+}
+
+div.nodeskrivning.rytmenodebillede .svarknapper {
+	margin-top: 1em
+}
+
+@media (min-width: 640px) {
+	div.nodelaesning.rytmenodebillede {
+		margin-top: 3em
+	}
+
+	div.nodeskrivning.rytmenodebillede {
+		margin-top: 3em
+	}
+}
+
+svg {
+	stroke: #000;
+	stroke-width: 0
+}
+
+svg .normal {
+	stroke: #000
+}
+
+svg .toneDerSlettes {
+	stroke: #CB8DA4
+}
+
+svg .toneDerIndsaettes {
+	stroke: #999
+}
+
+svg .rigtigTone {
+	stroke: #72ac51;
+	fill: #72ac51
+}
+
+svg .wrongRhythmNote {
+	stroke: #db4437;
+	fill: #db4437
+}
+
+svg .missingRhythmNote {
+	stroke: #db4437;
+	fill: #fff
+}
+
+svg .closeRhythmNote {
+	stroke: #FF9300;
+	fill: #FF9300
+}
+
+svg .playing {
+	stroke: #999;
+	fill: #999
+}
+
+#rhythmTapInfoBox {
+	background: #efefef;
+	height: 140px;
+	width: calc(170px + 15%);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	padding-top: 1em;
+	cursor: pointer
+}
+
+#rhythmTapInfoBox p {
+	text-align: center;
+	margin: 0;
+	padding: 0.25em;
+	font-weight: bold
+}
+
+#rhythmTapInfoBox p#rhythmTapInfoText {
+	line-height: 1.2em;
+	margin-bottom: 8px
+}
+
+#rhythmTapInfoBox p#rhythmTapInfoImage {
+	font-size: 56px;
+	line-height: 56px;
+	padding: 0 0 0 0;
+	height: 85px
+}
+
+#rhythmTapInfoBox img {
+	height: 56px
+}
+
+#rhythmTapInfoBox.wrong-answer {
+	background: #db4437;
+	color: #fff
+}
+
+#rhythmTapInfoBox.correct-answer {
+	background: #72ac51;
+	color: #FFF
+}
+
+svg .nbTone {
+	stroke: #FF9300;
+	fill: #FF9300
+}
+
+.notes-and-rests-buttons {
+	float: left;
+	text-align: left
+}
+
+.notes-and-rests-buttons label {
+	float: none
+}
+
+.default__page__content div.extras-rhythm-buttons {
+	line-height: 12px;
+	max-width: 500px;
+	text-align: left
+}
+
+.default__page__content div.extras-rhythm-buttons label {
+	float: none
+}
+
+.default__page__content div.extras-rhythm-buttons span.special-rhythm-buttons {
+	display: inline-block
+}
+
+.default__page__content div.extras-rhythm-buttons .erase-rhythm-button {
+	float: left;
+	margin-bottom: 43px
+}
+
+
+/****** NEW *******/
+
+@media(max-width:1005px) {
+	body>.fix__content>.wrapper {
+		background: white;
+	}
+}
+
+@media (min-width:991px) and (max-width:1005px) {
+
+	#sideoverskrift {
+		font-size: 28px;
+		margin-bottom: 60px;
+	}
+}
+
+@media (min-width:1006px) {
+/*
+Bottom white padding for Exercises box
+*/
+	.default__page__content {
+		padding-bottom: 20px;
+	}
+}
+
+ul.cirkel_container li div .cirkel_knap {
+	display: inline-block;
+	min-width: 140px;
+	max-width: 100%;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+	line-height: normal;
+	padding: 7px 7px 9px 7px;
+	border: 2px solid #d2d4d8;
+	border-radius: 9px;
+	cursor: pointer;
+	background-image: none;
+	text-align: center;
+	box-sizing: border-box;
+	color: #1b1b1b;
+}
+
+ul.cirkel_container li div span.standardvalg {
+	color: #FFF;
+	background-color: #72ac51;
+	border-color: #72ac51;
+}
+
+ul.cirkel_container li div .cirkel_knap:hover {
+	color: #FFF;
+	background-color: #72ac51;
+	border-color: #72ac51;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*
+Fix  to hide the 'About' item im Main menu on PC screen
+*/
+.desktop_nav .menu_main li:nth-child(5n).menu__item {
+	display: none;
+}
+

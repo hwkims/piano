@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.musicca.com	TRUE	/	FALSE	1999999999	d4bf99eed077f38afd8e07f6557c3f78	f1454f825213119d01b345cdc707f8a9
+www.musicca.com	TRUE	/	FALSE	1999999999	dee6a6073fe3865d9e8356278e63854a	en-GB
+
